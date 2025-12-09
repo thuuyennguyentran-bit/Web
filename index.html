@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <meta charset = "utf-8">
+    <title>CareRoute</title>
+    <head>
+        <style>
+            body {
+                background-color: #DDECF6;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            .Div1 {
+                flex-direction: row;
+                margin:auto; 
+                border-radius: 25px; 
+                align-content: center;
+                background-color: #184E6C;
+                height: 25%;
+            }
+            .id{ 
+                color:  #DDECF6; 
+                margin: auto;
+            }
+            .Div1_container1{ 
+                display: inline-flex;
+                background-color: #3085b0;
+                border-radius: 25px;
+                height: 5%;
+                width: 10%;
+            }
+            
+            .Div1_container2{
+                display: inline-flex;
+                background-color: #3085b0;
+                border-radius: 25px;
+                height: 5%;
+                width: 10%;
+            }
+            .Div1_container3{
+                display: inline-flex;
+                background-color: #3085b0;
+                border-radius: 25px;
+                height: 5%;
+                width: 10%;
+            }
+            .Div1_container4{
+                display: inline-flex;
+                background-color: #3085b0;
+                border-radius: 25px;
+                height: 5%;
+                width: 10%;
+            }
+            .Div2 {
+                margin: auto;
+                background-color: #9BCBE5;
+                width: 95%;
+                height:500px;
+                border-radius: 25px;
+            }
+            .fig{ 
+                margin:7px;
+                border-radius: 25px;
+                width: 1165px;
+                height:445px;
+            }
+            #Text {
+                display:none;
+                background-color: #9BCBE5;
+                margin-left: 70px;
+
+            }
+            #info{
+                display:none;
+                background-color: #9BCBE5;
+                margin-left: 70px;
+            }
+            .Div3{
+                float:left;
+                margin: 30px;
+                background-color: #9BCBE5 ;
+                width: 30%;
+                border-radius: 25px;
+            }
+            .Div4{
+                float:right;
+                margin: 30px;
+                background-color: #9BCBE5;
+                width:30%;
+                border-radius: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Div1">
+            <div style ="float:left">
+                <img style ="margin: 10px; border-radius: 20px; width: 120px; height: 120px" src = "CareRoute logo.png"></img>
+            </div>
+            <h1 style = "text-align: center; color: #DDECF6; margin-right: 110px">CareRoute</h1>
+            <i><p style = "text-align: center; color: #DDECF6; margin-right: 110px">Bạn chia một phần dư, họ nhận một phần đời</p></i>
+            <div class = "Div1_container1">
+                    <a class="id" href="gioithieu.html">Giới thiệu</a>
+            </div>
+            <div class = "Div1_container2">
+                <a class ="id" href="sumenh.html">Sứ mệnh</a>
+            </div>
+            <div class = "Div1_container3">
+                <a class ="id" href="baotro.html">Tìm bảo trợ</a>
+            </div>
+            <div class = "Div1_container4">
+                <a class ="id" href ="quyengop.html">Quyên góp</a>
+            </div>
+        </div>
+        <div class ="Div2">
+            <div>
+                <h3 style ="text-align: center; color: #184E6C">Bản đồ</h3>
+                <iframe class ="fig" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.946381095826!2d105.79576372592328!3d21.022814759747583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2sHanoi%2C%20Vietnam!5e0!3m2!1sen!2s!4v1764933520526!5m2!1sen!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div>
+            <div class = "Div3">
+            <button onclick="showText()" style="background-color: #184E6C; margin:auto; color:#DDECF6; border-radius: 25px">Xem nhu cầu thực tế</button>
+                <div id ="Text">
+                    <p style ="color: #184E6C">*Hà Tĩnh: sách vở, đồ dùng học tập</p>
+                    <p style ="color: #184E6C">*Nghệ An: vật dụng y tế</p>
+                    <p style ="color: #184E6C">*Quảng Trị: quần áo, gạo</p>
+                </div>
+                <script>
+                    function showText(){
+                        document.getElementById("Text").style.display="block";
+                    }
+                </script>
+            </div>
+            <div class ="Div4">
+            <button onclick="showDoc()" style="background-color: #184E6C; margin:auto; color:#DDECF6; border-radius: 25px">Quy trình gửi đồ</button>
+                <div id ="info">
+                    <p style ="color: #184E6C">- Đóng gói đồ đạc: 10/12 - 11/12</p>
+                    <p style ="color: #184E6C">- Vận chuyển đồ đạc: 12/12 - 14/12</p>
+                </div>
+                <script>
+                    function showDoc(){
+                        document.getElementById("info").style.display="block";
+                    }
+                </script>
+            </div>
+        </div>
+        
+    </body>
+</html>
